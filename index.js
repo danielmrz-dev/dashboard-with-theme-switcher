@@ -13,12 +13,22 @@ darkMode.addEventListener('change', () => {
     overviewTitle.classList.toggle('active-texts');
     thirdFollowersContainer.classList.toggle('active-bg-two');
     
-    followersContainers.forEach(element => {
-        element.classList.toggle('active-bg-two');
-    });
-
-    overviewContainers.forEach(element => {
-        element.classList.toggle('active-bg-two');
-    });    
+    if (darkMode.checked) {
+        followersContainers.forEach(element => {
+            element.classList.add('active-bg-two', 'hover');
+        });        
+        thirdFollowersContainer.classList.add('active-bg-two', 'hover');
+        overviewContainers.forEach(element => {
+            element.classList.add('active-bg-two', 'hover');
+        });    
+    } else {
+        followersContainers.forEach(element => {
+            element.classList.remove('active-bg-two', 'hover');
+        });        
+        thirdFollowersContainer.classList.remove('active-bg-two', 'hover');
+        overviewContainers.forEach(element => {
+            element.classList.remove('active-bg-two', 'hover');
+        });     
+    }
 })
 

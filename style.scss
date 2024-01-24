@@ -39,8 +39,16 @@ body {
     background-color: variables.$Very-Dark-Blue-two;
     color: variables.$White;
     z-index: 0;
+    transition: background-color .2s;
 }
 
 .active-bg-two {
     background-color: variables.$Dark-Desaturated-Blue;
 }
+
+.hover {
+    &:hover {
+        cursor: pointer;
+        background-color: variables.$Very-Dark-Blue-two-hover;
+    }    
+}    

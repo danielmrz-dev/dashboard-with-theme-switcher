@@ -14,7 +14,10 @@
         gap: 1rem;
         border-top: 4px solid variables.$Facebook;
         transition: background-color .2s;
-        
+        &:hover {
+            cursor: pointer;
+            background-color: variables.$Light-Grayish-Blue-hover;
+        }
         &:nth-child(2) {
             border-top: 4px solid variables.$Twitter;            
         }
@@ -35,7 +38,11 @@
         top: 2.2%;
         border-radius: 5px;
         z-index: 0;
-        transition: background-color .2s;
+        transition: background-color .2s, scale .2s;
+        &:hover {
+            cursor: pointer;
+            background-color: variables.$Light-Grayish-Blue-hover;
+        }
     }
     &__social-media {
         z-index: 2;

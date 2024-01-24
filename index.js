@@ -31,4 +31,3 @@ darkMode.addEventListener('change', () => {
         });     
     }
 })
-
